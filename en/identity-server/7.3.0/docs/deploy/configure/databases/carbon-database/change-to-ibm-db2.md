@@ -55,7 +55,7 @@ A sample configuration is given below.
 			```
 
 		!!! note
-			When creating the DB2 database, ensure that the page size is set to at least **32768 bytes (32 KB)**. The default page size of 8192 bytes (8 KB) would result in an SQL0614N error due to the index key length limit being exceeded. 
+			When creating the DB2 database, ensure that the page size is set to at least **32768 bytes (32 KB)**. The default page size of 8192 bytes (8 KB) would result in an SQL0614N error due to an index key length limit being exceeded. 
 
 2. `WSO2_SHARED_DB`
 	
