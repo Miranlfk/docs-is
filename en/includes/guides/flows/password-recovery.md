@@ -94,10 +94,10 @@ Users can now enter any of their configured alternative login identifiers (such 
 
 ## Control account information disclosure
 
-The **Resolve User** step (the first step, where the user submits their identifier) has two settings that control how much the recovery flow reveals about an account:
+When a user enters the user identifier, and clicks **Continue**, you can control how much information is revealed about the account with the following options.
 
-- **Notify User Existence**: Reveals whether the submitted identifier matches an existing account.
-- **Notify User Account Status**: Reveals whether the account is locked or disabled.
+- **Notify User Existence**: Whether the identifier matches an existing account.
+- **Notify User Account Status**: Whether the account is locked or disabled.
 
 Both settings are **disabled by default** to prevent user enumeration. For the full behavior of each option, see [Resolve user properties](#resolve-user-properties).
 
@@ -106,11 +106,11 @@ Both settings are **disabled by default** to prevent user enumeration. For the f
 
 To enable the notifications:
 
-1. On the **Edit Password Recovery Flow** canvas, in the first step (where the user is resolved), hover over the action button (for example, **Continue**) and click the pencil icon that appears to open the button's **Properties** panel.
+1. On the step in which a user enters the identifier, hover over the action button (for example, **Continue**) and click the pencil icon to open the button's **Properties** panel.
 
     ![Resolve User properties showing the Notify User Existence and Notify User Account Status checkboxes]({{base_path}}/assets/img/guides/flows/flow-password-recovery-resolve-user-properties.png){: width="400" style="display: block; margin: 0; border: 0.3px solid lightgrey;"}
 
-2. Under **Resolve User**, enable the required checkboxes:
+2. Under **Resolve User**, enable the preferred settings:
 
     - **Notify User Existence**
     - **Notify User Account Status**
